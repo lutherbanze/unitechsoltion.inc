@@ -267,7 +267,7 @@ header {
 
 .fleet__images img {
 padding-inline-end: 1px;
-border-radius: 20%;
+border-radius: 20px;
 }
 
 .fleet__wrapper-1 .fleet__images img {
