@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --text-dark: #000000;
+  --text-dark: #0187fe;
   --text-light: #767268;
   --extra-light: #f3f4f6;
   --white: #ffffff;
@@ -165,25 +165,36 @@ header {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 0 50px 50px var(--white) inset;
+  box-shadow: 0 0 100px 100px var(--white) inset;
 }
 
 .header__content {
-  padding-block: 2rem 5rem;
+  padding-block: 2rem 2rem;
   padding-inline: 1rem;
 }
 
 .header__content h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 15px;
   font-size: 2px;
   font-weight: 700;
   color: var(--text-dark);
   text-align: center;
   line-height: 5px;
+  
+}
+@media (max-width: 767px) {
+  .header__content h1 {
+    margin-bottom: 35px;
+  }
 }
 .header__content h1 {
   font-size: 30px !important;
 }
+
+.header__content p {
+  color: black;
+}
+
 .about__container {
   display: grid;
   gap: 2rem;
@@ -197,6 +208,7 @@ header {
 
 .about__content .section__description {
   margin-block: 1rem;
+  color: black;
 }
 
 .about__btn {
@@ -214,12 +226,20 @@ header {
 }
 
 .fleet__container .section__description {
-  max-width: 900px;
+  max-width: 950px;
   margin-inline: auto;
   margin-bottom: 4rem;
   padding-inline: 1rem;
+  color: black;
 }
 
+.section__description {
+  color: black;
+}
+
+.feature__grid .feature__card h4 {
+  color: #000000;
+}
 .fleet__wrapper-1 {
   margin-bottom: 1rem;
 }
@@ -234,6 +254,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+
 }
 
 .fleet__wrapper-1 .fleet__images {
@@ -245,16 +266,16 @@ header {
 }
 
 .fleet__images img {
-  border-radius: 1rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+padding-inline-end: 1px;
+border-radius: 20%;
 }
 
 .fleet__wrapper-1 .fleet__images img {
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .fleet__wrapper-2 .fleet__images img {
-  max-width: 300px;
+  max-width: 280px;
 }
 
 @keyframes scroll-left {
